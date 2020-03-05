@@ -1,0 +1,50 @@
+<div class="document">
+	<div class="document-title">
+	<div class="document-rating">
+		{stars}
+	</div>
+		{title}
+	</div>
+	<div class="document-info">
+		{thumbnail}
+		{if_not_free}
+		<span class="document-price-lable">{text:COM_DIGITALMARKETX_PRICE}&nbsp;:</span>
+		<span class="document-price-text">{price}</span>
+		<br/>
+		{/if_not_free}
+		<span class="document-price-lable">{text:COM_DIGITALMARKETX_SIZE}&nbsp;:</span>
+		<span class="document-price-text">{size}</span>
+		<br/>
+		<span class="document-price-lable">{text:COM_DIGITALMARKETX_AUTHOR}&nbsp;:</span>
+		<span class="document-price-text">{author}</span>
+		<br/>
+		<span class="document-price-lable">{text:COM_DIGITALMARKETX_RATING}&nbsp;:</span>
+		<span class="document-price-text">{rating}</span>
+		<br/>
+		<span class="document-price-lable">{text:COM_DIGITALMARKETX_RATING_COUNT}&nbsp;:</span>
+		<span class="document-price-text">{votes_count}</span>
+		<br/>
+		{if_has_download_link}
+		<span class="document-price-lable">{text:COM_DIGITALMARKETX_DOWNLOAD_EXPIRES}&nbsp;:</span>
+		<span class="document-price-text">{expiration}</span>
+		<br/>
+		<span class="document-price-lable">{text:COM_DIGITALMARKETX_DOWNLOAD_COUNT_LEFT}&nbsp;:</span>
+		<span class="document-price-text">{downloads_left}</span>
+		<br/>
+		{/if_has_download_link}
+		{if_unpublished}
+		<span class="documentnotpublished">{text:COM_DIGITALMARKET_FILE_UNPUBLISHED}</span>
+		{/if_unpublished}
+	</div>
+	<div style="clear: both;"></div>
+	<div class="document-description">
+		{description}
+	</div>
+	{buttons}
+	{if_can_report}
+	<div class="report-link">
+	<a href="{report_link}">{text:COM_DIGITALMARKETX_REPORT}</a>
+	</div>
+	<div style="clear: both;"></div>
+	{/if_can_report}
+</div>

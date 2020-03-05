@@ -1,0 +1,6 @@
+<digitalmarket_template name="default">
+<list_layout file="list.html"/>
+<details_layout file="details.html"/>
+<vote_layout file="vote.html"/>
+<styles file="default.css"/>
+</digitalmarket_template>

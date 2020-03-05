@@ -1,0 +1,39 @@
+<div style="clear: both;"></div>
+<div class="comment">
+	<div class="comment-head">
+	<div class="comment-rating">
+	{comment_stars}
+	</div>
+	<div class="comment-title">
+	<a href="#comment-{comment_id}" id="comment-{comment_id}">{comment_subject}</a>
+	</div>
+	</div>
+	<div style="clear: both;"></div>
+	<div class="comment-body">
+	<div class="comment-profile">
+	<a href="#comment_user_id-{comment_user_id}" id="comment_user_id-{comment_user_id}">
+	{comment_user_name}
+	</a>
+	</div>
+	{comment_text}
+	</div>
+	<div style="clear: both;"></div>
+	{if_has_reply}
+	<div class="comment-reply">
+	<div class="comment-reply-header">
+	{text:COM_DIGITALMARKETX_OWNERS_REPLY}
+	</div>
+	{comment_reply_text}
+	</div>
+	{/if_has_reply}
+	{if_hasnt_reply}
+	{if_owner}
+	<div class="comment-reply-link">
+	{comment_reply_link}
+	</div>
+	{/if_owner}
+	{/if_hasnt_reply}
+	<div class="comment-date">
+	{comment_date}
+	</div>
+</div>
